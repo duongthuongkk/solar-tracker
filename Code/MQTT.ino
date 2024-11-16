@@ -2,10 +2,10 @@
 #include <PubSubClient.h>
 
 // WiFi và MQTT thông tin
-const char* ssid = "your-SSID";       // Tên WiFi
-const char* password = "your-PASSWORD"; // Mật khẩu WiFi
+const char* ssid = "Pi";       // Tên WiFi
+const char* password = "123456"; // Mật khẩu WiFi
 const char* mqtt_server = "4dd631e7c9b946149f240234824a4e6b.s1.eu.hivemq.cloud"; // MQTT Broker
-const char* mqtt_topic = "esp32/voltage"; // Chủ đề gửi dữ liệu
+const char* mqtt_topic = "voltage log"; // Chủ đề gửi dữ liệu
 
 WiFiClient espClient;
 PubSubClient client(espClient);
